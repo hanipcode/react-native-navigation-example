@@ -67,14 +67,17 @@ class PickupMapView extends Component {
           <MapView.Marker coordinate={this.props.pickupCoordinate} />
         )}
         {this.props.dropCoordinate && (
-          <MapView.Marker coordinate={this.props.dropCoordinate} />
+          <MapView.Marker
+            coordinate={this.props.dropCoordinate}
+            pinColor="green"
+          />
         )}
         {this.state.polylinePoints && (
           <MapView.Polyline
             coordinates={this.state.polylinePoints}
             strokeWidth={4}
             strokeColor="#1abc9c"
-            lineJoin={this.state.polylinePoints}
+            miterLength={0.1}
             geodesic
           />
         )}

@@ -60,6 +60,7 @@ export function buildDirections(startCoordString, finishCoordString, key) {
   return fetch(uri, null, 'placeDirections')
     .then(response => response.json())
     .then(data => {
+      console.log(data);
       const coordinates = decode(data.routes[0].overview_polyline.points);
       return coordinates;
     })
