@@ -1,5 +1,5 @@
-# react-native-place-autocomplete-example
-Example of using place autocomplete prediction API by Google with react native
+# react-native-navigation-example
+Example of using place autocomplete prediction API, Place Details, And Directions by Google with react native
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 

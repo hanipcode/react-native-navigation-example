@@ -1,12 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import SearchPage from './containers/SearchPage';
+import Expo from 'expo';
+import Pickup from './src/containers/PickupPage';
+
+console.disableYellowBox = true;
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <SearchPage />
+        <Pickup />
       </View>
     );
   }
@@ -16,6 +19,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop: 40
+    marginTop: Expo.Constants.statusBarHeight
   }
 });

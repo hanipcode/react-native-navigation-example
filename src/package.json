@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@mapbox/polyline": "^0.2.0"
+  }
+}
